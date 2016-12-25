@@ -11,9 +11,39 @@
 		<div class="box">
 			<div class="cover">	
 				<div class="flower"></div>
+			</div> 
+			<div class="bg"></div>
+			<div class="word">
+				<span class="word1">祝</span>
+				<span class="word2">妈</span>
+				<span class="word3">妈</span>
+				<span class="word4">生</span>
+				<span class="word5">日</span>
+				<span class="word6">快</span>
+				<span class="word7">乐</span>
+				<span class="word8">！</span>
 			</div>
 		</div>
 	</section>
+	<a class="btn">点</a>
+	<!-- <section class="main">
+		<div class="word">
+		<div class="row">
+			
+				<span class="word1">天</span>
+				<span class="word2">天</span>
+				<span class="word3">开</span>
+				<span class="word4">心</span>
+		</div>
+		<div class="row">
+			
+				<span class="word5">幸</span>
+				<span class="word6">福</span>
+				<span class="word7">健</span>
+				<span class="word8">康</span>
+		</div>
+			</div>
+	</section> -->
 </body>
 </html>
 <script src="js/zepto.min.js"></script>
@@ -21,8 +51,13 @@
 <script>
 	$(function(){
 		$('.box').tap(function(){
-			$(this).css('animation-play-state','paused');
-			$('.cover').css({'-animation':'up 3s','-webkit-transform':'translateY(-500%)'});
+			$(this).css({'-webkit-animation-play-state':'paused','box-shadow':'0 10px 40px #FE4365'});
+			$('.cover').css({'-webkit-transform':'translateY(-200px)'});
+			$('.bg').css({'-webkit-transform':'translateY(-140px)','height':'50px'});
+			$('.word span').css({'opacity':'1'});
+			$('.btn').hide();
+			// $('.login').css('opacity',0);
+			// $('.main').css({'-webkit-transform':'translateY(-100%)'});
 		});
 			
 
